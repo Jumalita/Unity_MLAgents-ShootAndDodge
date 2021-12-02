@@ -1,0 +1,29 @@
+{
+    "NPCAgent": {
+        "checkpoints": [
+            {
+                "steps": 257015,
+                "file_path": "results\\Only_shoting_no_movement\\NPCAgent\\NPCAgent-257015.onnx",
+                "reward": -6.5,
+                "creation_time": 1638476211.4427907,
+                "auxillary_file_paths": [
+                    "results\\Only_shoting_no_movement\\NPCAgent\\NPCAgent-257015.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 257015,
+            "file_path": "results\\Only_shoting_no_movement\\NPCAgent.onnx",
+            "reward": -6.5,
+            "creation_time": 1638476211.4427907,
+            "auxillary_file_paths": [
+                "results\\Only_shoting_no_movement\\NPCAgent\\NPCAgent-257015.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.27.0",
+        "torch_version": "1.7.0+cu110"
+    }
+}
