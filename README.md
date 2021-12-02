@@ -3,4 +3,4 @@ This is a ML Unity project that works with ML agents RL to train a flying-trigge
 <br />
 <br />
 Thank you for reading, <br />
-Judit :yellow_heart:
+Juma :yellow_heart:
