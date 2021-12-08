@@ -1054,7 +1054,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8244f8ca3a92294cb5b9727d576fffb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentVersion: 0
+  currentVersion: 1
   player: {fileID: 1079830057}
   npc: {fileID: 522798269}
   enviromentMaker: {fileID: 919210398}
@@ -1558,7 +1558,7 @@ Transform:
   m_GameObject: {fileID: 522798262}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.44, y: 0.3, z: -0.47500443}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: -1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1442991399}
@@ -1685,7 +1685,6 @@ MonoBehaviour:
   bulletPrefab: {fileID: 4768096823896333976, guid: c6d1abc91ce14334d8c5302a7dc1ff78,
     type: 3}
   cannonTransform: {fileID: 1442991399}
-  pointerTransform: {fileID: 983708271}
   cooldownTime: 3
 --- !u!114 &522798270
 MonoBehaviour:
@@ -1807,6 +1806,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 983708271}
+  - component: {fileID: 983708272}
   m_Layer: 0
   m_Name: Pointer
   m_TagString: Untagged
@@ -1821,14 +1821,40 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 983708270}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.49, y: -10.85, z: 0}
+  m_LocalRotation: {x: -0, y: 0, z: 0.9383193, w: 0.34576994}
+  m_LocalPosition: {x: -0.422, y: -0.335, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 522798264}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 139.542}
+--- !u!114 &983708272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 983708270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f67c7e722ba14acd9153bb4488bff6e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SensorName: RayPerceptionSensor
+  m_DetectableTags:
+  - Untagged
+  - Player
+  m_RaysPerDirection: 0
+  m_MaxRayDegrees: 70
+  m_SphereCastRadius: 0
+  m_RayLength: 20
+  m_RayLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967291
+  m_ObservationStacks: 1
+  rayHitColor: {r: 1, g: 0, b: 0, a: 1}
+  rayMissColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1079830051
 GameObject:
   m_ObjectHideFlags: 0
@@ -1845,7 +1871,7 @@ GameObject:
   - component: {fileID: 1079830057}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

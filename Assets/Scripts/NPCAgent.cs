@@ -13,17 +13,18 @@ public class NPCAgent : Agent
     [SerializeField] GameObject player;
     [SerializeField] GameObject bulletPrefab;
     [SerializeField] Transform cannonTransform;
-    [SerializeField] Transform pointerTransform;
+    //[SerializeField] Transform pointerTransform;
     [SerializeField] float cooldownTime = 3f;
     float minTimeNextShoot;
 
 #region beheviour
-
+/*
     private void OnDrawGizmos() {
         Gizmos.color = Color.red;
         Gizmos.DrawRay(new Vector2(cannonTransform.position.x,cannonTransform.position.y),
             new Vector2(pointerTransform.position.x,pointerTransform.position.y) *1000f);
     }
+    */
 
     void Update()
     {
@@ -76,7 +77,7 @@ public class NPCAgent : Agent
     {
         //my position
         sensor.AddObservation(transform.position);
-        //if player is in range 
+        /*if player is in range 
         //Ray cast
         RaycastHit2D hit = Physics2D.Raycast( cannonTransform.position, pointerTransform.position);
 
@@ -85,7 +86,7 @@ public class NPCAgent : Agent
         } else {
             sensor.AddObservation(0);
         }
-
+        */
     }
 
     public override void OnActionReceived(ActionBuffers actions)
