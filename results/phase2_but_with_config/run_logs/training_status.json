@@ -1,0 +1,47 @@
+{
+    "NPCAgent": {
+        "checkpoints": [
+            {
+                "steps": 499994,
+                "file_path": "results\\phase2_but_with_config\\NPCAgent\\NPCAgent-499994.onnx",
+                "reward": -2.4008046412190724,
+                "creation_time": 1639086791.741909,
+                "auxillary_file_paths": [
+                    "results\\phase2_but_with_config\\NPCAgent\\NPCAgent-499994.pt"
+                ]
+            },
+            {
+                "steps": 999983,
+                "file_path": "results\\phase2_but_with_config\\NPCAgent\\NPCAgent-999983.onnx",
+                "reward": -1.6623333368036481,
+                "creation_time": 1639088256.0084507,
+                "auxillary_file_paths": [
+                    "results\\phase2_but_with_config\\NPCAgent\\NPCAgent-999983.pt"
+                ]
+            },
+            {
+                "steps": 1016255,
+                "file_path": "results\\phase2_but_with_config\\NPCAgent\\NPCAgent-1016255.onnx",
+                "reward": 1.4570000171661377,
+                "creation_time": 1639088302.239632,
+                "auxillary_file_paths": [
+                    "results\\phase2_but_with_config\\NPCAgent\\NPCAgent-1016255.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 1016255,
+            "file_path": "results\\phase2_but_with_config\\NPCAgent.onnx",
+            "reward": 1.4570000171661377,
+            "creation_time": 1639088302.239632,
+            "auxillary_file_paths": [
+                "results\\phase2_but_with_config\\NPCAgent\\NPCAgent-1016255.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.27.0",
+        "torch_version": "1.7.0+cu110"
+    }
+}

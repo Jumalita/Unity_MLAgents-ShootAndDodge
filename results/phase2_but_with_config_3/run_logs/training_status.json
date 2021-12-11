@@ -1,0 +1,65 @@
+{
+    "NPCAgent": {
+        "checkpoints": [
+            {
+                "steps": 1499990,
+                "file_path": "results\\phase2_but_with_config_3\\NPCAgent\\NPCAgent-1499990.onnx",
+                "reward": 0.5469280960513097,
+                "creation_time": 1639158803.710817,
+                "auxillary_file_paths": [
+                    "results\\phase2_but_with_config_3\\NPCAgent\\NPCAgent-1499990.pt"
+                ]
+            },
+            {
+                "steps": 1999954,
+                "file_path": "results\\phase2_but_with_config_3\\NPCAgent\\NPCAgent-1999954.onnx",
+                "reward": 0.5182550256109277,
+                "creation_time": 1639160533.1804125,
+                "auxillary_file_paths": [
+                    "results\\phase2_but_with_config_3\\NPCAgent\\NPCAgent-1999954.pt"
+                ]
+            },
+            {
+                "steps": 2499997,
+                "file_path": "results\\phase2_but_with_config_3\\NPCAgent\\NPCAgent-2499997.onnx",
+                "reward": 0.5235869475721341,
+                "creation_time": 1639162261.6080728,
+                "auxillary_file_paths": [
+                    "results\\phase2_but_with_config_3\\NPCAgent\\NPCAgent-2499997.pt"
+                ]
+            },
+            {
+                "steps": 2999993,
+                "file_path": "results\\phase2_but_with_config_3\\NPCAgent\\NPCAgent-2999993.onnx",
+                "reward": 0.4552380886106264,
+                "creation_time": 1639165225.7614503,
+                "auxillary_file_paths": [
+                    "results\\phase2_but_with_config_3\\NPCAgent\\NPCAgent-2999993.pt"
+                ]
+            },
+            {
+                "steps": 3004882,
+                "file_path": "results\\phase2_but_with_config_3\\NPCAgent\\NPCAgent-3004882.onnx",
+                "reward": 0.48572648483782244,
+                "creation_time": 1639167914.3046665,
+                "auxillary_file_paths": [
+                    "results\\phase2_but_with_config_3\\NPCAgent\\NPCAgent-3004882.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 3004882,
+            "file_path": "results\\phase2_but_with_config_3\\NPCAgent.onnx",
+            "reward": 0.48572648483782244,
+            "creation_time": 1639167914.3046665,
+            "auxillary_file_paths": [
+                "results\\phase2_but_with_config_3\\NPCAgent\\NPCAgent-3004882.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.27.0",
+        "torch_version": "1.7.0+cu110"
+    }
+}

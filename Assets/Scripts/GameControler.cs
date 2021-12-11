@@ -7,7 +7,6 @@ public enum IAVersion {
     Only_shoting_with_movement,
     Shoting_and_npc_movement,
     Shoting_platforms_and_npc_movement,
-    Shoting_and_movemnt_player_no_IA,
     Everything,
 }
 
@@ -19,24 +18,18 @@ public class GameControler : MonoBehaviour
     [SerializeField] NPCAgent npc;
     [SerializeField] EnviromentMaker enviromentMaker;
 
-    float nextEpisode = 10f;
+    float nextEpisode = 30f;
     float timeTillNextEpisode ;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     public IAVersion GetCurrentVersion(){
         return currentVersion;
     }
 
     private void Update() {
-        /*TESTING
+        //*TESTING
         if (Input.GetKeyUp(KeyCode.X))
         {
-            RemakeEnviroment();
+            enviromentMaker.RemakeEnviroment(currentVersion);
         }
         //*/
         RoundManagement();
@@ -51,6 +44,7 @@ public class GameControler : MonoBehaviour
 
             case IAVersion.Only_shoting_no_movement:
             case IAVersion.Only_shoting_with_movement:
+            case IAVersion.Shoting_and_npc_movement:
                 if (Time.time > timeTillNextEpisode ){
                     _EndEpisode();
                 }
@@ -64,12 +58,11 @@ public class GameControler : MonoBehaviour
     }
 
     public void _SetReward(float reward){
-        npc.SetReward(reward);
+        npc.AddReward(reward);
     }
 
     public void _EndEpisode(){
         npc.EndEpisode();
-
     }
 
     public void _StartEpisode(){
