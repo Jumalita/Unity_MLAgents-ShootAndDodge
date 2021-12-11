@@ -1,0 +1,56 @@
+{
+    "NPCAgent": {
+        "checkpoints": [
+            {
+                "steps": 499958,
+                "file_path": "results\\phase2_but_with_config_4\\NPCAgent\\NPCAgent-499958.onnx",
+                "reward": 0.7439428503336828,
+                "creation_time": 1639222224.660279,
+                "auxillary_file_paths": [
+                    "results\\phase2_but_with_config_4\\NPCAgent\\NPCAgent-499958.pt"
+                ]
+            },
+            {
+                "steps": 999962,
+                "file_path": "results\\phase2_but_with_config_4\\NPCAgent\\NPCAgent-999962.onnx",
+                "reward": 0.815326311321635,
+                "creation_time": 1639223901.1677158,
+                "auxillary_file_paths": [
+                    "results\\phase2_but_with_config_4\\NPCAgent\\NPCAgent-999962.pt"
+                ]
+            },
+            {
+                "steps": 1499998,
+                "file_path": "results\\phase2_but_with_config_4\\NPCAgent\\NPCAgent-1499998.onnx",
+                "reward": 0.8154999902048572,
+                "creation_time": 1639225708.8472657,
+                "auxillary_file_paths": [
+                    "results\\phase2_but_with_config_4\\NPCAgent\\NPCAgent-1499998.pt"
+                ]
+            },
+            {
+                "steps": 1501769,
+                "file_path": "results\\phase2_but_with_config_4\\NPCAgent\\NPCAgent-1501769.onnx",
+                "reward": 0.8243928448188983,
+                "creation_time": 1639225714.2032237,
+                "auxillary_file_paths": [
+                    "results\\phase2_but_with_config_4\\NPCAgent\\NPCAgent-1501769.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 1501769,
+            "file_path": "results\\phase2_but_with_config_4\\NPCAgent.onnx",
+            "reward": 0.8243928448188983,
+            "creation_time": 1639225714.2032237,
+            "auxillary_file_paths": [
+                "results\\phase2_but_with_config_4\\NPCAgent\\NPCAgent-1501769.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.27.0",
+        "torch_version": "1.7.0+cu110"
+    }
+}

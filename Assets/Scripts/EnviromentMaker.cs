@@ -27,7 +27,6 @@ public class EnviromentMaker : MonoBehaviour
                 PlacePlayer();
             break;
             case IAVersion.Shoting_platforms_and_npc_movement:
-            case IAVersion.Shoting_and_movemnt_player_no_IA:
             case IAVersion.Everything:
                 PlaceNPC();
                 PlacePlayer();
@@ -37,16 +36,16 @@ public class EnviromentMaker : MonoBehaviour
     }
 
     void PlaceNPC(){
-        npc.transform.position = new Vector3(Random.Range(-x_max_len,x_max_len),
+        npc.transform.localPosition = new Vector3(Random.Range(-x_max_len,x_max_len),
                                         Random.Range(-1f,y_max_len),-0.5f);
     }
 
     void PlaceInitialTesting(){
-        npc.transform.position = new Vector3(-0.4f,0.3f,-0.5f);
+        npc.transform.localPosition = new Vector3(-0.4f,0.3f,-0.5f);
         if (Random.value < 0.5f){
-            player.transform.position = new Vector3(-4f,-3f,-0.5f);
+            player.transform.localPosition = new Vector3(-4f,-3f,-0.5f);
         } else {
-            player.transform.position = new Vector3(3.2f,-3f,-0.5f);
+            player.transform.localPosition = new Vector3(3.2f,-3f,-0.5f);
         }
 
         if (Random.value < 0.5f){
@@ -57,12 +56,12 @@ public class EnviromentMaker : MonoBehaviour
     }
 
     void PlacePlayer(){
-        float x_min = Random.Range(-x_max_len, npc.transform.position.x);
-        float x_max = Random.Range(npc.transform.position.x, x_max_len);
+        float x_min = Random.Range(-x_max_len, npc.transform.localPosition.x);
+        float x_max = Random.Range(npc.transform.localPosition.x, x_max_len);
         if (Random.value < 0.5f){
-            player.transform.position = new Vector3(x_min,-1.9f,-0.5f);
+            player.transform.localPosition = new Vector3(x_min,-1.9f,-0.5f);
         } else {
-            player.transform.position = new Vector3(x_max,-1.9f,-0.5f);
+            player.transform.localPosition = new Vector3(x_max,-1.9f,-0.5f);
         }
     }
 

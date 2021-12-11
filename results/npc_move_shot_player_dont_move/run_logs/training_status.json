@@ -1,0 +1,38 @@
+{
+    "NPCAgent": {
+        "checkpoints": [
+            {
+                "steps": 499944,
+                "file_path": "results\\npc_move_shot_player_dont_move\\NPCAgent\\NPCAgent-499944.onnx",
+                "reward": 0.9962068899566757,
+                "creation_time": 1638998834.3830488,
+                "auxillary_file_paths": [
+                    "results\\npc_move_shot_player_dont_move\\NPCAgent\\NPCAgent-499944.pt"
+                ]
+            },
+            {
+                "steps": 500008,
+                "file_path": "results\\npc_move_shot_player_dont_move\\NPCAgent\\NPCAgent-500008.onnx",
+                "reward": 0.9962068899566757,
+                "creation_time": 1638998834.499178,
+                "auxillary_file_paths": [
+                    "results\\npc_move_shot_player_dont_move\\NPCAgent\\NPCAgent-500008.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 500008,
+            "file_path": "results\\npc_move_shot_player_dont_move\\NPCAgent.onnx",
+            "reward": 0.9962068899566757,
+            "creation_time": 1638998834.499178,
+            "auxillary_file_paths": [
+                "results\\npc_move_shot_player_dont_move\\NPCAgent\\NPCAgent-500008.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.27.0",
+        "torch_version": "1.7.0+cu110"
+    }
+}
