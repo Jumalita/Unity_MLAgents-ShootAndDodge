@@ -21,6 +21,7 @@ public class Player : MonoBehaviour
                 LinealMovment();
                 break;
             case IAVersion.Shoting_and_npc_movement:
+            case IAVersion.Shoting_platforms_and_npc_movement:
                 Follow();
             break;
         }
@@ -29,14 +30,11 @@ public class Player : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D other) {
         if (other.gameObject.GetComponent<Bullet>()){
             Die();
-        } else if (gameControler.GetCurrentVersion() == IAVersion.Shoting_and_npc_movement
-                && other.gameObject.layer == 9){
-            currentMoveDirection = currentMoveDirection == 0 ? 1 : 0;
-        }
+        } 
     }
 
     private void Die(){
-        gameControler._SetReward(0.75f);
+        gameControler._SetReward(1f);
         gameControler._EndEpisode();
     }
 
@@ -59,15 +57,29 @@ public class Player : MonoBehaviour
     }
 
     private void Follow(){
-        Debug.DrawRay(transform.position, Vector2.up, Color.blue, 0.1f);
+        Debug.DrawRay(transform.position, Vector2.up*7.5f, Color.blue, 0.1f);
+        Debug.DrawRay(transform.position, Vector2.right*0.5f, Color.blue, 0.1f);
+        Debug.DrawRay(transform.position, Vector2.left*0.5f, Color.blue, 0.1f);
 
         LayerMask mask = LayerMask.GetMask("NPC");
-        if (IsGrounded() && Physics2D.Raycast(transform.position, Vector2.up, 500f, mask))
+        LayerMask maskGrounds = LayerMask.GetMask("GroundPlatforms");
+
+        if (IsGrounded() && Physics2D.Raycast(transform.position, Vector2.up, 7.5f, mask))
         {
             if (GetComponent<Rigidbody2D>().velocity.y == 0){
-                GetComponent<Rigidbody2D>().velocity = new Vector2(0,7f);
+                GetComponent<Rigidbody2D>().velocity = new Vector2(0,8f);
             }
-        } else {
+        } else if (IsGrounded() && Physics2D.Raycast(transform.position, Vector2.right, 0.5f, maskGrounds) ) {
+            Debug.Log("right");
+            if (GetComponent<Rigidbody2D>().velocity.y == 0){
+                GetComponent<Rigidbody2D>().velocity = new Vector2(0,8f);
+            }
+        } else if (IsGrounded() &&  Physics2D.Raycast(transform.position, Vector2.left, 0.5f, maskGrounds)) {
+            if (GetComponent<Rigidbody2D>().velocity.y == 0){
+                GetComponent<Rigidbody2D>().velocity = new Vector2(0,8f);
+            }
+        }
+        else {
             this.transform.localPosition += 
             (npcTransform.position.x > transform.position.x ? Vector3.right : Vector3.left) 
             * Time.deltaTime * moveSpeed;

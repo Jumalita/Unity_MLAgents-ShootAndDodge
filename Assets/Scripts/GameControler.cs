@@ -18,7 +18,7 @@ public class GameControler : MonoBehaviour
     [SerializeField] NPCAgent npc;
     [SerializeField] EnviromentMaker enviromentMaker;
 
-    float nextEpisode = 30f;
+    float nextEpisode = 240f;
     float timeTillNextEpisode ;
 
     public IAVersion GetCurrentVersion(){
@@ -45,6 +45,7 @@ public class GameControler : MonoBehaviour
             case IAVersion.Only_shoting_no_movement:
             case IAVersion.Only_shoting_with_movement:
             case IAVersion.Shoting_and_npc_movement:
+            case IAVersion.Shoting_platforms_and_npc_movement:
                 if (Time.time > timeTillNextEpisode ){
                     _EndEpisode();
                 }

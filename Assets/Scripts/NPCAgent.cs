@@ -79,12 +79,31 @@ public class NPCAgent : Agent
         float dist = Vector3.Distance(this.transform.localPosition,player.transform.localPosition);
         sensor.AddObservation(dist);
 
+        var directionBullets =  body.transform.localScale.x == -1 ? new Vector2(1,-1): new Vector2(-1,-1);
+        LayerMask mask = LayerMask.GetMask("Player");
+
+        if (Physics2D.Raycast(cannonTransform.position, directionBullets, 6f, mask))
+        {
+            sensor.AddObservation(1);
+        } else {
+            sensor.AddObservation(0);
+        }
+
+        if (Physics2D.Raycast(transform.position, Vector2.down, 7.5f, mask))
+        {
+            sensor.AddObservation(1);
+        } else {
+            sensor.AddObservation(0);
+        }
+
     }
 
     public override void OnActionReceived(ActionBuffers actions)
     {
+        AddReward(-0.0001f);
+
         if (actions.DiscreteActions[0] == 1) {
-            AddReward(-0.001f);
+            AddReward(-0.01f);
             Shoot();
         }
 
@@ -95,13 +114,20 @@ public class NPCAgent : Agent
             this.transform.localPosition += new Vector3(moveX,moveY) * Time.deltaTime * moveSpeed;
         }
 
-        var direction =  body.transform.localScale.x == -1 ? new Vector2(1,-1): new Vector2(-1,-1);
-        Debug.DrawRay(cannonTransform.position, direction* 6f, Color.blue, 0.01f);
+        var direction_bullets =  body.transform.localScale.x == -1 ? new Vector2(1,-1): new Vector2(-1,-1);
+        Debug.DrawRay(cannonTransform.position, direction_bullets* 6f, Color.green, 0.01f);
 
         LayerMask mask = LayerMask.GetMask("Player");
-        if (Physics2D.Raycast(cannonTransform.position, direction, 6f, mask))
+        if (Physics2D.Raycast(cannonTransform.position, direction_bullets, 6f, mask))
         {
-            AddReward(0.01f);
+            AddReward(0.0001f);
+        }
+
+        Debug.DrawRay(transform.position, Vector2.down* 7.5f, Color.green, 0.01f);
+
+        if (Physics2D.Raycast(transform.position, Vector2.down, 7.5f, mask))
+        {
+            AddReward(-0.001f);
         }
 
     }

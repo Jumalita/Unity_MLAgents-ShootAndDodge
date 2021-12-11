@@ -46,7 +46,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2233982154843410471
 Transform:
   m_ObjectHideFlags: 0
@@ -559,7 +559,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BrainParameters:
-    VectorObservationSize: 1
+    VectorObservationSize: 3
     NumStackedVectorObservations: 1
     m_ActionSpec:
       m_NumContinuousActions: 2
@@ -570,7 +570,7 @@ MonoBehaviour:
     hasUpgradedBrainParametersWithActionSpec: 1
   m_Model: {fileID: 0}
   m_InferenceDevice: 0
-  m_BehaviorType: 2
+  m_BehaviorType: 0
   m_BehaviorName: NPCAgent
   TeamId: 0
   m_UseChildSensors: 1
@@ -765,7 +765,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8244f8ca3a92294cb5b9727d576fffb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentVersion: 2
+  currentVersion: 3
   player: {fileID: 2233982156882727227}
   npc: {fileID: 2233982155460926003}
   enviromentMaker: {fileID: 2233982154895310476}
@@ -1566,41 +1566,7 @@ CompositeCollider2D:
   m_GeometryType: 0
   m_GenerationType: 0
   m_EdgeRadius: 0
-  m_ColliderPaths:
-  - m_Collider: {fileID: 2233982155691944284}
-    m_ColliderPaths:
-    - - X: 90000000
-        Y: 60000000
-      - X: -100000000
-        Y: 60000000
-      - X: -100000000
-        Y: -50000000
-      - X: 90000000
-        Y: -50000000
-    - - X: -90000000
-        Y: -40000000
-      - X: -90000000
-        Y: 40000000
-      - X: -89571432
-        Y: 40000000
-      - X: -88285712
-        Y: 40285712
-      - X: -80000000
-        Y: 48428572
-      - X: -80000000
-        Y: 50000000
-      - X: 70000000
-        Y: 50000000
-      - X: 70000000
-        Y: 49571428
-      - X: 74142856
-        Y: 44285716
-      - X: 79571432
-        Y: 40000000
-      - X: 80000000
-        Y: 40000000
-      - X: 80000000
-        Y: -40000000
+  m_ColliderPaths: []
   m_CompositePaths:
     m_Paths:
     - - {x: 8.99997, y: -5}
@@ -1977,6 +1943,6 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.021666765, y: -0.5450053}
-  m_Size: {x: 0.529984, y: 0.746655}
+  m_Offset: {x: 0.0009242296, y: -0.5450053}
+  m_Size: {x: 0.69592357, y: 0.746655}
   m_Direction: 0
