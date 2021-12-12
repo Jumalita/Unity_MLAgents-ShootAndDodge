@@ -40,22 +40,9 @@ public class GameControler : MonoBehaviour
     }
     
     private void RoundManagement(){
-        switch (currentVersion) {
-
-            case IAVersion.Only_shoting_no_movement:
-            case IAVersion.Only_shoting_with_movement:
-            case IAVersion.Shoting_and_npc_movement:
-            case IAVersion.Shoting_platforms_and_npc_movement:
-                if (Time.time > timeTillNextEpisode ){
-                    _EndEpisode();
-                }
-                break;
-
-            default:
-            break;
-            
-        }
-        
+        if (Time.time > timeTillNextEpisode ){
+            _EndEpisode();
+        }      
     }
 
     public void _SetReward(float reward){

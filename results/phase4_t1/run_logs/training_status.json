@@ -1,0 +1,105 @@
+{
+    "PlayerAgent": {
+        "checkpoints": [
+            {
+                "steps": 499977,
+                "file_path": "results\\phase4_t1\\PlayerAgent\\PlayerAgent-499977.onnx",
+                "reward": -0.8939571528562478,
+                "creation_time": 1639303283.22719,
+                "auxillary_file_paths": [
+                    "results\\phase4_t1\\PlayerAgent\\PlayerAgent-499977.pt"
+                ]
+            },
+            {
+                "steps": 999996,
+                "file_path": "results\\phase4_t1\\PlayerAgent\\PlayerAgent-999996.onnx",
+                "reward": -0.7974096327446974,
+                "creation_time": 1639306578.9157593,
+                "auxillary_file_paths": [
+                    "results\\phase4_t1\\PlayerAgent\\PlayerAgent-999996.pt"
+                ]
+            },
+            {
+                "steps": 1499979,
+                "file_path": "results\\phase4_t1\\PlayerAgent\\PlayerAgent-1499979.onnx",
+                "reward": -1.075441494765805,
+                "creation_time": 1639308852.0744402,
+                "auxillary_file_paths": [
+                    "results\\phase4_t1\\PlayerAgent\\PlayerAgent-1499979.pt"
+                ]
+            },
+            {
+                "steps": 1612087,
+                "file_path": "results\\phase4_t1\\PlayerAgent\\PlayerAgent-1612087.onnx",
+                "reward": -0.9824860477603452,
+                "creation_time": 1639309246.8360097,
+                "auxillary_file_paths": [
+                    "results\\phase4_t1\\PlayerAgent\\PlayerAgent-1612087.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 1612087,
+            "file_path": "results\\phase4_t1\\PlayerAgent.onnx",
+            "reward": -0.9824860477603452,
+            "creation_time": 1639309246.8360097,
+            "auxillary_file_paths": [
+                "results\\phase4_t1\\PlayerAgent\\PlayerAgent-1612087.pt"
+            ]
+        }
+    },
+    "NPCAgent": {
+        "checkpoints": [
+            {
+                "steps": 499977,
+                "file_path": "results\\phase4_t1\\NPCAgent\\NPCAgent-499977.onnx",
+                "reward": 0.65878420545548,
+                "creation_time": 1639303283.4830885,
+                "auxillary_file_paths": [
+                    "results\\phase4_t1\\NPCAgent\\NPCAgent-499977.pt"
+                ]
+            },
+            {
+                "steps": 999996,
+                "file_path": "results\\phase4_t1\\NPCAgent\\NPCAgent-999996.onnx",
+                "reward": 0.7068696399884564,
+                "creation_time": 1639306579.2159302,
+                "auxillary_file_paths": [
+                    "results\\phase4_t1\\NPCAgent\\NPCAgent-999996.pt"
+                ]
+            },
+            {
+                "steps": 1499979,
+                "file_path": "results\\phase4_t1\\NPCAgent\\NPCAgent-1499979.onnx",
+                "reward": 0.9579000174999237,
+                "creation_time": 1639308852.208083,
+                "auxillary_file_paths": [
+                    "results\\phase4_t1\\NPCAgent\\NPCAgent-1499979.pt"
+                ]
+            },
+            {
+                "steps": 1612119,
+                "file_path": "results\\phase4_t1\\NPCAgent\\NPCAgent-1612119.onnx",
+                "reward": 0.7270966685273581,
+                "creation_time": 1639309247.029492,
+                "auxillary_file_paths": [
+                    "results\\phase4_t1\\NPCAgent\\NPCAgent-1612119.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 1612119,
+            "file_path": "results\\phase4_t1\\NPCAgent.onnx",
+            "reward": 0.7270966685273581,
+            "creation_time": 1639309247.029492,
+            "auxillary_file_paths": [
+                "results\\phase4_t1\\NPCAgent\\NPCAgent-1612119.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.27.0",
+        "torch_version": "1.7.0+cu110"
+    }
+}
