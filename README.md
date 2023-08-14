@@ -32,9 +32,14 @@ https://github.com/Jumalita/Unity_MLAgents-ShootAndDodge/assets/61147274/b166271
 
 ## Phase 5
 Learning with movement at the NPC and the Player with better stats.
+
 _upcoming soon..._
 
 This repository is a Computer Engineering ML project for the subject of Advanced Tecniques of Machine Learning at the [University of Girona](https://www.udg.edu/en/)
-<br />
-Thank you for reading, <br />
+
+
+
+Thank you for reading,
+
+
 Juma :yellow_heart:
