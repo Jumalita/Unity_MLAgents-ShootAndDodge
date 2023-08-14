@@ -3,17 +3,27 @@ Machine learning project within the Unity environment where we're actively using
 
 Feel free to navigate through the repository's different branches to explore the various training phases that showcase the progression of our project.
 
-<br />
+## Characteristics of the Enemy NPC
+- **Flight Capability:** The enemy character possesses the ability to navigate through the virtual environment using a flying mechanism.
+- **Projectile Attack:** Armed with offensive capabilities, the enemy NPC engages in combat by launching projectiles at its adversaries.
+- **Vulnerability:** The enemy NPC is susceptible to defeat upon contact.
+- **Comparable Speed:** Lower velocity, preventing it from overtaking the player unfairly.
+- **Strategic Cooldown:** To maintain a fair and engaging gameplay experience, the enemy NPC displays tactical acumen by imposing a cooldown period following each projectile assault, requiring prudent timing for optimal effectiveness.
+
 ## Phase 1
+https://github.com/Jumalita/Unity_MLAgents-ShootAndDodge/assets/61147274/921e8260-b4f1-4769-a6c4-8d451d41c923
 
 ## Phase 2
+https://github.com/Jumalita/Unity_MLAgents-ShootAndDodge/assets/61147274/9e78bfc2-8415-4a6e-89ad-7a4055e7ebba
 
 ## Phase 3
+https://github.com/Jumalita/Unity_MLAgents-ShootAndDodge/assets/61147274/6b22f9e2-6d94-423b-89e7-f0e367601283
 
 ## Phase 4
+https://github.com/Jumalita/Unity_MLAgents-ShootAndDodge/assets/61147274/b166271a-3e36-4941-9081-452dd17dadf1
 
-# Phase 5
-_upcoming... soon_
+## Phase 5
+_upcoming soon..._
 
 This repository is a Computer Engineering ML project for [UdG](https://www.udg.edu/en/)
 <br />
