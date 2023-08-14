@@ -17,14 +17,17 @@ https://github.com/Jumalita/Unity_MLAgents-ShootAndDodge/assets/61147274/921e826
 
 ## Phase 2
 Learning with movement.
+
 https://github.com/Jumalita/Unity_MLAgents-ShootAndDodge/assets/61147274/9e78bfc2-8415-4a6e-89ad-7a4055e7ebba
 
 ## Phase 3
 Learning with movement at the NPC and the Player.
+
 https://github.com/Jumalita/Unity_MLAgents-ShootAndDodge/assets/61147274/6b22f9e2-6d94-423b-89e7-f0e367601283
 
 ## Phase 4
 Learning with movement at the NPC and the Player, now an IA.
+
 https://github.com/Jumalita/Unity_MLAgents-ShootAndDodge/assets/61147274/b166271a-3e36-4941-9081-452dd17dadf1
 
 ## Phase 5
