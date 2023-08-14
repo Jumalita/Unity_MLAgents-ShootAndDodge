@@ -12,6 +12,7 @@ Feel free to navigate through the repository's different branches to explore the
 
 ## Phase 1
 Learning whether to shoot.
+
 https://github.com/Jumalita/Unity_MLAgents-ShootAndDodge/assets/61147274/921e8260-b4f1-4769-a6c4-8d451d41c923
 
 ## Phase 2
